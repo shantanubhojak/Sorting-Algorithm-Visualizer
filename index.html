@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Sorting Algorithm visulaizer
+        </h1>
+    </header>
+    <div id="control-container">
+        <div id="controls">
+            <span class="control-text">Size of array</span><input id="size" type="range" min="8" max="70" step="1" value="8">
+            <span class="control-text">Speed</span><input id="speed" type="range" min="0" max="1000" step="100" value="900">
+            <button class="btn" id="sort" onclick="sort()">Sort</button>
+        </div>
+        <div id="algo">
+            <button class="btn" id="Bubble" onclick="selectAlgo('Bubble')">Bubble Sort</button>
+            <button class="btn" id="Insertion" onclick="selectAlgo('Insertion')">Insertion Sort</button>
+            <button class="btn" id="Selection" onclick="selectAlgo('Selection')">Selection Sort</button>
+            <button class="btn" id="Merge" onclick="selectAlgo('Merge')">Merge Sort</button>
+        </div>
+    </div>
+    <div id="div-container"></div>
+    <div id="arrows"></div>
+
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/arrowVis.js"></script>
+    <script src="scripts/SelectAlgo.js"></script>
+    <script src="scripts/bubleSort.js"></script>
+    <script src="scripts/test.js"></script>
+    <script src="scripts/insertionSort.js"></script>
+    <script src="scripts/selectionSort.js"></script>
+    <script src="scripts/MergeSort.js"></script>
+</body>
+
+</html>
